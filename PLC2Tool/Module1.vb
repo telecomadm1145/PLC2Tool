@@ -71,9 +71,10 @@ Module Module1
         Console.WriteLine("选择模式：")
         Console.WriteLine("1.使用内置函数破解")
         Console.WriteLine("2.使用PCL2内置函数破解")
+#If False Then 'https://github.com/VBSSCBGroup/PLC2Tool/issues/1
         Console.WriteLine("3.PCL2插件模式")
+#End If
         Dim kc As Char = Console.ReadKey().KeyChar
-
         If kc = "1"c Then
             Console.WriteLine()
             CrackWithoutPCL2()
@@ -81,10 +82,12 @@ Module Module1
             Console.WriteLine()
             Console.WriteLine("请拖入PCL2")
             CrackWithPCL2(Console.ReadLine())
+#If False Then 'https://github.com/VBSSCBGroup/PLC2Tool/issues/1
         Else
             Console.WriteLine()
             Console.WriteLine("请拖入PCL2")
             PCL2Plugin(Console.ReadLine())
+#End If
         End If
     End Sub
 

@@ -50,8 +50,8 @@
     <OptionInfer>On</OptionInfer>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="PCL2启动器">
-      <HintPath>..\..\..\..\Downloads\PCL2启动器.exe</HintPath>
+    <Reference Include="Plain Craft Launcher 2">
+      <HintPath>..\..\..\..\Downloads\Plain Craft Launcher 2.exe</HintPath>
     </Reference>
     <Reference Include="PresentationCore" />
     <Reference Include="PresentationFramework" />
